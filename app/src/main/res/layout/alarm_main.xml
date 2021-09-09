@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DADDE2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdioGp1"
+        android:layout_width="210dp"
+        android:layout_height="148dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        app:layout_constraintStart_toEndOf="@+id/date_alarm"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker">
+
+        <RadioButton
+            android:id="@+id/origin_radio"
+            android:layout_width="81dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="20dp"
+            android:text="ORIGIN" />
+
+        <RadioButton
+            android:id="@+id/nfc_radio"
+            android:layout_width="81dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="20dp"
+            android:text="NFC" />
+
+        <RadioButton
+            android:id="@+id/shake_radio"
+            android:layout_width="81dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="20dp"
+            android:text="SHAKE" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="83dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_line"
+        android:text="뒤로 가기"
+        app:layout_constraintStart_toEndOf="@+id/btn_finish"
+        app:layout_constraintTop_toBottomOf="@+id/rdioGp1" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="48dp"
+        android:text="저장"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_alarm"
+        android:background="@drawable/button_line"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:text="종료"
+        app:layout_constraintStart_toEndOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/rdioGp1"
+        android:background="@drawable/button_line"/>
+
+    <DatePicker
+        android:id="@+id/date_alarm"
+        android:layout_width="251dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="40dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

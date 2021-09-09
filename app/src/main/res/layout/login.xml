@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".SubLogin"
+    android:background="#DADDE2">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="319dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/textback"
+        android:gravity="center_horizontal"
+        android:text="환영 합니다!"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="54dp"
+        android:text="앱을 처음 사용 하신가면 계정 추가하기를 클릭 해주시고,\n
+기본 사용자는 구글 로그인을 클릭해주세요\n\n\n\n\n\n"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/textback"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/button_line"
+        android:onClick="doLogin"
+        android:text="구글 로그인 인증하기"
+        app:layout_constraintStart_toEndOf="@+id/login_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/login_tv"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/button_line"
+        android:onClick="usingLogin"
+        android:text="로그인 하기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >

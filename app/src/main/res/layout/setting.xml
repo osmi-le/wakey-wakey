@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="2019 2학기 모바일 컴퓨팅 과제로\n제작된 알람 프로그램 WakeyWaky 입니다.\n:개발자:\n\n20173114 권미소\n20153238 김일환\n20173116 신휘정\n20173237 김희정" />
+</LinearLayout>
